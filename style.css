@@ -1,0 +1,72 @@
+body{
+display: grid;
+grid-template-areas:
+   "cabeca cabeca"
+    "braco corpo"
+    "pe pe";
+grid-template-rows: 100px 850px 150px;
+grid-template-columns: 500px auto;
+}
+
+header{
+background-color: blue;
+grid-area: cabeca;
+}
+aside{
+background-color: chartreuse;
+grid-area: braco;
+}
+main{
+background-color: blueviolet;
+grid-area: corpo;
+}
+footer{
+background-color: gold;
+grid-area: pe;
+}
+@media only screen and (max width 450){
+body{
+display: grid;
+grid-template-areas:
+    "cabeca cabeca"
+    "braco corpo"
+    "pe pe";
+grid-template-rows:100px 500px 100px;
+grid-template-columns: auto;
+}
+auto{
+    display: none;
+}
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
