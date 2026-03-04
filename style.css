@@ -24,7 +24,7 @@ footer{
 background-color: gold;
 grid-area: pe;
 }
-@media only screen and (max width 450){
+@media only screen and (max-width: 450){
 body{
 display: grid;
 grid-template-areas:
@@ -38,11 +38,27 @@ auto{
     display: none;
 }
 }
-
-
-
-
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+    border: darkblue 2px solid;
+    background-color: rgb(93, 151, 226);
+    width: 400px;
+    height: 650px;
+    border-radius: 10px;
+    text-align: center;
+    margin:10px;
 }
+
+.imagem_produto{
+    width: 320px;
+}
+.d_produto{}
+
+
 
 
 
