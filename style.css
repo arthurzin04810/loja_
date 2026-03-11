@@ -1,88 +1,105 @@
 body{
-display: grid;
-grid-template-areas:
-   "cabeca cabeca"
-    "braco corpo"
-    "pe pe";
-grid-template-rows: 100px 850px 150px;
-grid-template-columns: 500px auto;
+    display: grid;
+    grid-template-areas:
+    "cabeca cabeca"
+        "braco corpo"
+        "pe pe";
+    grid-template-rows: 100px auto 150px;
+    grid-template-columns: 400px auto;
 }
 
 header{
-background-color: blue;
-grid-area: cabeca;
+    background-color: blue;
+    grid-area: cabeca;
 }
 aside{
-background-color: chartreuse;
-grid-area: braco;
+    background-color: chartreuse;
+    grid-area: braco;
 }
 main{
-background-color: blueviolet;
-grid-area: corpo;
+    background-color: rgb(226, 43, 156);
+    grid-area: corpo;
 }
 footer{
-background-color: gold;
-grid-area: pe;
+    background-color: gold;
+    grid-area: pe;
 }
-@media only screen and (max-width: 450){
-body{
-display: grid;
-grid-template-areas:
-    "cabeca cabeca"
-    "braco corpo"
-    "pe pe";
-grid-template-rows:100px 500px 100px;
-grid-template-columns: auto;
-}
-auto{
-    display: none;
-}
-}
+
 .card{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 50px;
-    align-items: center;
+    align-items:center ;
     border: darkblue 2px solid;
     background-color: rgb(93, 151, 226);
-    width: 400px;
-    height: 650px;
+    width: 350px;
+    height: 800px;
     border-radius: 10px;
-    text-align: center;
+    text-align:center ;
     margin:10px;
 }
 
 .imagem_produto{
     width: 320px;
 }
-.d_produto{}
+.d_produto{
+    color: darksalmon;
+    font-size: xx-large;
+}
+.p_produto{
+    color: deeppink;
+    font-size: 40px;
+}
+.botao_produto{
+    font-size: 30px;
+    background-color: black;
+    width: 50%;
+    text-decoration: none;
+    height: 50px;
+    border-radius: 20px;
+}
+.letra_botao{
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+}
 
+.pai{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media only screen and (max-width: 850px) {
+    body{
+        grid-template-areas: 
+        "cabeca"
+        "braco"
+        "corpo"
+        "pe";
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 50px auto 200px;
+    }   
+    header img{
+        display: none;
+    } 
+}
+@media only screen and (max-width: 450px) {
+    body{
+        grid-template-areas: 
+        "cabeca"
+        "corpo"
+        "pe";
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto 100px;
+    }
+    aside{
+        display: none;
+    }
+   
+    
+}
 
 
