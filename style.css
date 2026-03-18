@@ -9,8 +9,9 @@ body{
 }
 
 header{
-    background-color: blue;
+    background-color: white;
     grid-area: cabeca;
+
 }
 aside{
     background-color: chartreuse;
@@ -101,5 +102,8 @@ footer{
    
     
 }
+.imglogo{
+    width: 100px;
 
+}
 
