@@ -9,16 +9,16 @@ body{
 }
 
 header{
-    background-color: white;
+    background-color: gold;
     grid-area: cabeca;
 
 }
 aside{
-    background-color: chartreuse;
+    background-color: lightblue;
     grid-area: braco;
 }
 main{
-    background-color: rgb(226, 43, 156);
+    background-color: blue;
     grid-area: corpo;
 }
 footer{
@@ -103,7 +103,7 @@ footer{
     
 }
 .imglogo{
-    width: 100px;
+    width: 150px;
 
 }
 
