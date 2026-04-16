@@ -9,7 +9,7 @@ body{
 }
 
 header{
-    background-color: gold;
+    background-color:white;
     grid-area: cabeca;
 
 }
@@ -22,7 +22,7 @@ main{
     grid-area: corpo;
 }
 footer{
-    background-color: gold;
+    background-color: blsck;
     grid-area: pe;
 }
 
@@ -45,7 +45,7 @@ footer{
     width: 320px;
 }
 .d_produto{
-    color: darksalmon;
+    color: black;
     font-size: xx-large;
 }
 .p_produto{
